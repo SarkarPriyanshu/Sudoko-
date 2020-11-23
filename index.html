@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoko Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- header starts -->
+    <header>
+        <h1>Sudoko Game</h1>
+        <div id="setup-game">
+            <div id="diff">
+                <h2>Choose Difficulty: </h2>
+                <label for="Easy"> <input id="diff-1" type="radio" name="diff" value="easy" checked> Easy</label>
+                <label for="Medium"> <input id="diff-2" type="radio" name="diff" value="medium">Medium</label>
+                <label for="Difficulty"> <input id="diff-3" type="radio" name="diff" value="difficulty"> Difficulty</label>
+            </div>
+            <button id="start-btn">Create New Game!</button>
+            <div id="time">
+                <h2>Choose Time: </h2>
+                <label for="5 min"> <input id="time-1" type="radio" name="time" value="five"> 5 min</label>
+                <label for="15 min"> <input id="time-2" type="radio" name="time" value="fifteen"> 15 min</label>
+                <label for="25 min"> <input id="time-3" type="radio" name="time" value="twenty five" checked> 25 min</label>
+            </div>
+        </div>
+        
+    </header>
+    <!-- header starts -->
+    <main>
+        <div id="stats">
+            <!-- <p id="timer">Timer</p> -->
+            <p id="lives">Lives</p>
+        </div>
+
+        <div id="game">
+            <div id="board"></div>
+               <div id="number-container" class="">
+                <p id="one">1</p>
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Made by team 4</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
